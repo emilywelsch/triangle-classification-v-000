@@ -14,6 +14,7 @@ class Triangle
       @triangle_lengths [1] + @triangle_lengths [2] > @triangle_lengths [0]
       return true
     else false
+    end
   end
 
   def kind
