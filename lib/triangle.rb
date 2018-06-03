@@ -8,6 +8,9 @@ class Triangle
   end
 
   def triangle?
+    
+
+
     if @triangle_lengths.sort.first > 0 &&
       return true
     else false
@@ -27,5 +30,7 @@ class Triangle
     end
   end
 
+  class TriangleError < StandardError
+  end
 
 end
