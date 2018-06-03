@@ -8,8 +8,9 @@ class Triangle
   end
 
   def legal?
-    if @triangle_lengths.sort.first > 0
-      
+    if @triangle_lengths.sort.first > 0 &&
+      return true
+    else false
   end
 
   def kind
