@@ -14,7 +14,7 @@ class Triangle
   end
 
   def kind
-    if valid?
+    if legal?
       if @triangle_lengths.uniq.size == 1
         return :equilateral
       elsif @triangle_lengths.uniq.size == 2
