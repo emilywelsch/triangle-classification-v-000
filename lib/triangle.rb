@@ -7,14 +7,14 @@ class Triangle
     @triangle_lengths << length3
   end
 
-  def legal?
+  def triangle?
     if @triangle_lengths.sort.first > 0 &&
       return true
     else false
   end
 
   def kind
-    if legal?
+    if triangle?
       if @triangle_lengths.uniq.size == 1
         return :equilateral
       elsif @triangle_lengths.uniq.size == 2
