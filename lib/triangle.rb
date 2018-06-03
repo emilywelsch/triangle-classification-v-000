@@ -8,9 +8,12 @@ class Triangle
   end
 
   def kind
-    if length1 == length2 == length3
+    if @triangle_lengths.uniq.size == 1
       return :equilateral
-
+    elsif @triangle_lengths.uniq.size == 2
+      return :isosceles
+    else
+      return :scalene
   end
 
 
