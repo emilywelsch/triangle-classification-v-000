@@ -14,12 +14,16 @@ class Triangle
   end
 
   def kind
-    if @triangle_lengths.uniq.size == 1
-      return :equilateral
-    elsif @triangle_lengths.uniq.size == 2
-      return :isosceles
+    if valid?
+      if @triangle_lengths.uniq.size == 1
+        return :equilateral
+      elsif @triangle_lengths.uniq.size == 2
+        return :isosceles
+      else
+        return :scalene
+      end
     else
-      return :scalene
+      raise TriangleError
     end
   end
 
