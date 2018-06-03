@@ -8,7 +8,7 @@ class Triangle
   end
 
   def triangle?
-    
+
 
 
     if @triangle_lengths.sort.first > 0 &&
