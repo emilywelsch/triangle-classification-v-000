@@ -7,6 +7,11 @@ class Triangle
     @triangle_lengths << length3
   end
 
+  def legal?
+    if @triangle_lengths.sort.first > 0
+      
+  end
+
   def kind
     if @triangle_lengths.uniq.size == 1
       return :equilateral
