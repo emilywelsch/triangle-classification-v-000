@@ -8,10 +8,10 @@ class Triangle
   end
 
   def triangle?
-
-
-
     if @triangle_lengths.sort.first > 0 &&
+      @triangle_lengths [0] + @triangle_lengths [1] > @triangle_lengths [2] &&
+      @triangle_lengths [0] + @triangle_lengths [2] > @triangle_lengths [1] &&
+      @triangle_lengths [1] + @triangle_lengths [2] > @triangle_lengths [0]
       return true
     else false
   end
